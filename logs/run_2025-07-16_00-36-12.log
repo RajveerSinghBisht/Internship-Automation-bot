@@ -1,0 +1,17 @@
+2025-07-16 00:36:12,644 - INFO - 🔍 Starting internship scraper...
+2025-07-16 00:36:12,644 - INFO - 🔍 Scraping internships from source...
+2025-07-16 00:36:15,193 - INFO - ✅ 5 total internships found.
+
+2025-07-16 00:36:15,193 - INFO - 📋 Previewing scraped jobs:
+2025-07-16 00:36:15,193 - INFO - Senior Security Engineer at Loft Orbital Solutions — https://remoteOK.com/remote-jobs/remote-senior-security-engineer-loft-orbital-solutions-1093625
+2025-07-16 00:36:15,193 - INFO - Manufacturing Experts AI Trainer at RYZ Labs — https://remoteOK.com/remote-jobs/remote-manufacturing-experts-ai-trainer-ryz-labs-1093623
+2025-07-16 00:36:15,193 - INFO - Blockchain Security Researcher at Tenderly — https://remoteOK.com/remote-jobs/remote-blockchain-security-researcher-tenderly-1093620
+2025-07-16 00:36:15,193 - INFO - Chief Executive Officer Crypto Blockchain at Caiz — https://remoteOK.com/remote-jobs/remote-chief-executive-officer-crypto-blockchain-caiz-1093606
+2025-07-16 00:36:15,193 - INFO - Security Researcher at Spearbit — https://remoteOK.com/remote-jobs/remote-security-researcher-spearbit-1093595
+2025-07-16 00:36:15,193 - INFO - 🧠 Generating message for job 1: Senior Security Engineer at Loft Orbital Solutions
+2025-07-16 00:36:17,472 - INFO - 🧠 Generating message for job 2: Manufacturing Experts AI Trainer at RYZ Labs
+2025-07-16 00:36:19,665 - INFO - 🧠 Generating message for job 3: Blockchain Security Researcher at Tenderly
+2025-07-16 00:36:21,822 - INFO - 🧠 Generating message for job 4: Chief Executive Officer Crypto Blockchain at Caiz
+2025-07-16 00:36:23,987 - INFO - 🧠 Generating message for job 5: Security Researcher at Spearbit
+2025-07-16 00:36:26,243 - INFO - 📧 Sending compiled email...
+2025-07-16 00:36:29,589 - INFO - ✅ Done. Email sent successfully.
