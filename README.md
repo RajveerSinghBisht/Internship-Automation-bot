@@ -151,6 +151,7 @@ The script runs only if the PC is turned on and your user account is active. You
 
 #### 5. Logs and Debugging
 
+Create a 'logs' folder where you will download the complete project files.
 Log files are saved in the `logs/` folder. If something breaks, check the logs for details.
 
 #### 6. Stopping the Automation
