@@ -90,3 +90,71 @@ python scheduler.py
 -   `message_generator.py`: A simple wrapper that connects the main script to the `openrouter_client`.
 -   `email_sender.py`: Manages the connection to the Gmail SMTP server and sends the final summary email.
 -   `check_models.py`: A utility script to list available models from a configured AI provider (used for development).
+
+
+## Automating on Local Machine (Windows Startup)
+
+To ensure the internship bot runs automatically every day when your PC starts, follow these steps to add the scheduler to your Windows startup routine.
+
+### Step-by-Step Setup:
+
+#### 1. Convert Python Script to Executable (Optional but Recommended)
+
+If you prefer an executable file over a Python script, you can convert `scheduler.py` to `.exe` using PyInstaller:
+
+```bash
+pip install pyinstaller
+pyinstaller --onefile scheduler.py
+```
+
+This creates a `scheduler.exe` file inside the `dist/` folder.
+
+#### 2. Open the Windows Startup Folder
+
+- Press `Win + R` to open the Run dialog.
+- Type:
+  ```
+  shell:startup
+  ```
+- Press Enter. This opens the Startup folder.
+
+#### 3. Add Script or Executable to Startup
+
+- **If using the **``**:**
+
+  - Navigate to the `dist/` folder where `scheduler.exe` is located.
+  - Right-click it → **Create shortcut**.
+  - Copy the shortcut to the Startup folder.
+
+- **If using the **``** file directly:**
+
+  - Right-click on `scheduler.py` → **Create shortcut**.
+
+  - Right-click the shortcut → **Properties**.
+
+  - In the **Target** field, enter:
+
+    ```
+    "C:\Path\To\python.exe" "C:\Path\To\Your\Project\scheduler.py"
+    ```
+
+  - Replace paths with your actual Python interpreter and script file path.
+
+  - Move the shortcut into the Startup folder.
+
+#### 4. Ensure PC is On or Wakes Up
+
+The script runs only if the PC is turned on and your user account is active. You can:
+
+- Set your PC to auto-wake using Task Scheduler (optional)
+- Keep your machine awake during trigger time (10 AM by default)
+
+#### 5. Logs and Debugging
+
+Log files are saved in the `logs/` folder. If something breaks, check the logs for details.
+
+#### 6. Stopping the Automation
+
+- **To disable automation**: Just delete the shortcut from the Startup folder.
+- **To stop the script manually**: If running manually, use `Ctrl + C` in the terminal.
+
